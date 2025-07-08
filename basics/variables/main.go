@@ -16,6 +16,8 @@ func main() {
 	// Local variable (typed)
 	var name string = "Anup"
 	var age int = 28
+	var height float64 = 5.11
+	var active bool = true
 
 	// Local variable (untyped)
 	var country = "India"
@@ -31,7 +33,9 @@ func main() {
 	fmt.Println("PI global : ", Pi)
 	fmt.Println("Local name : ", name)
 	fmt.Println("local age : ", age)
-	fmt.Println("local country : ", country)
+	fmt.Println("local Height (float value) : ", height)
+	fmt.Println("local active (boolean value) : ", active)
+	fmt.Println("local country  (untyped): ", country)
 	fmt.Println("local language (short declaration) : ", language)
 
 	fmt.Println("Default Int : ", defaultInt)
