@@ -26,12 +26,12 @@ func increment(num int) {
 func main() {
 	x := 10
 
-	// First method
+	// First method (not reliable in production).
 	go increment(x)
 	time.Sleep(1 * time.Second)
 	fmt.Println("Main Thread")
 
-	// Second method using sync.WaitGroup
+	// Second method using sync.WaitGroup (recommended).
 	var wg sync.WaitGroup
 	wg.Add(1)
 	go increment2(x, &wg)
