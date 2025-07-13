@@ -40,3 +40,11 @@ func Multiplier(factor int) func(int) int {
 		return num * factor
 	}
 }
+
+func Counter(num int) func(int) int {
+	return func(i int) int {
+		num += 1
+		return num
+	}
+
+}
