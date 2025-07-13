@@ -34,7 +34,7 @@ func main() {
 	// Second method using sync.WaitGroup
 	var wg sync.WaitGroup
 	wg.Add(1)
-	increment2(x, &wg)
+	go increment2(x, &wg)
 	wg.Wait()
 	fmt.Println("Main thread Complete!!!")
 
