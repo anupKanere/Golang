@@ -23,6 +23,9 @@ func increment(num int) {
 	fmt.Println("Final Num : ", num)
 }
 
+func sayHello(ch chan string) {
+	ch <- "Hello This is message from the channel !!!"
+}
 func main() {
 	x := 10
 
@@ -37,5 +40,11 @@ func main() {
 	go increment2(x, &wg)
 	wg.Wait()
 	fmt.Println("Main thread Complete!!!")
+
+	// Using channel
+	ch := make(chan string)
+	go sayHello(ch)
+	msg := <-ch
+	fmt.Println(msg)
 
 }
