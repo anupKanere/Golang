@@ -88,6 +88,9 @@ func main() {
 	fmt.Println(intersectionOfTwoArrays([]int{1, 2, 2, 1}, []int{2, 2}))
 	fmt.Println(intersectionOfTwoArrays([]int{4, 9, 5}, []int{9, 4, 9, 8, 4}))
 	fmt.Println("------------------------------------------------------------------")
-	// 15 
+	// 15
 	fmt.Println("------------------------------------------------------------------")
+	targetSearch := 9
+	searchArr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Println("Basic Binary Search : \n Number ", targetSearch, "is available at index ", basicBinarySearch(searchArr, targetSearch))
 }
