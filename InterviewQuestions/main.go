@@ -88,9 +88,28 @@ func main() {
 	fmt.Println(intersectionOfTwoArrays([]int{1, 2, 2, 1}, []int{2, 2}))
 	fmt.Println(intersectionOfTwoArrays([]int{4, 9, 5}, []int{9, 4, 9, 8, 4}))
 	fmt.Println("------------------------------------------------------------------")
-	// 15
+
+	// 15 Basic Binary Seach
 	fmt.Println("------------------------------------------------------------------")
 	targetSearch := 9
 	searchArr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
 	fmt.Println("Basic Binary Search : \n Number ", targetSearch, "is available at index ", basicBinarySearch(searchArr, targetSearch))
+	fmt.Println("------------------------------------------------------------------")
+
+	// 16 Search in Rotated Sorted Array
+	numsCheck := []int{4, 5, 6, 7, 0, 1, 2}
+	targetS := 10
+	fmt.Println("Target is Available at index : ", seachInRotatedArray(numsCheck, targetS))
+
+	// 17 Find Minimum in Rotated Sorted Array
+	fmt.Println("Min in sorted arr : ", FindMin(numsCheck))
+
+	// 18 Valid Palindrome
+	palindomeStr := "ABCDDCBA"
+	fmt.Println("Valid Palindrome : ", ispalindrome(palindomeStr))
+
+	// 19 Merge Sorted Array
+	num1 := []int{2, 4, 6, 8}
+	num2 := []int{1, 3, 5, 7, 9}
+	fmt.Println("Merge Sorted Array : ", mergeSortedArr(num1, num2))
 }
