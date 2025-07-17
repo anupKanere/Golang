@@ -101,15 +101,50 @@ func main() {
 	targetS := 10
 	fmt.Println("Target is Available at index : ", seachInRotatedArray(numsCheck, targetS))
 
+	fmt.Println("------------------------------------------------------------------")
+
 	// 17 Find Minimum in Rotated Sorted Array
 	fmt.Println("Min in sorted arr : ", FindMin(numsCheck))
+
+	fmt.Println("------------------------------------------------------------------")
 
 	// 18 Valid Palindrome
 	palindomeStr := "ABCDDCBA"
 	fmt.Println("Valid Palindrome : ", ispalindrome(palindomeStr))
 
+	fmt.Println("------------------------------------------------------------------")
+
 	// 19 Merge Sorted Array
 	num1 := []int{2, 4, 6, 8}
 	num2 := []int{1, 3, 5, 7, 9}
 	fmt.Println("Merge Sorted Array : ", mergeSortedArr(num1, num2))
+
+	fmt.Println("------------------------------------------------------------------")
+
+	// 20 Remove Duplicates from Sorted Array
+	sortedArr := []int{0, 1, 1, 2, 2, 2, 3, 4, 5, 6, 6, 7, 8, 9}
+	fmt.Println("Array After removing duplicates : ", removeDuplicate(sortedArr))
+
+	fmt.Println("------------------------------------------------------------------")
+
+	// 21 Valid Parentheses
+	fmt.Println("Valid Parentheses")
+	fmt.Println("() -", validParentheses("()"))         // true
+	fmt.Println("()[]{} -", validParentheses("()[]{}")) // true
+	fmt.Println("(] -", validParentheses("(]"))         // false
+	fmt.Println("([)] -", validParentheses("([)]"))     // false
+	fmt.Println("{[]} -", validParentheses("{[]}"))     // true
+
+	fmt.Println("------------------------------------------------------------------")
+
+	//22 Min Stack
+	minStack := Constructor()
+	minStack.push(-2)
+	minStack.push(0)
+	minStack.push(-3)
+	fmt.Println("Min:", minStack.getMin()) // Returns -3
+	minStack.pop()
+	fmt.Println("Top:", minStack.top())    // Returns 0
+	fmt.Println("Min:", minStack.getMin()) // Returns -2
+
 }
