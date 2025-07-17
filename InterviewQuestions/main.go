@@ -139,12 +139,12 @@ func main() {
 
 	//22 Min Stack
 	minStack := Constructor()
-	minStack.push(-2)
-	minStack.push(0)
-	minStack.push(-3)
-	fmt.Println("Min:", minStack.getMin()) // Returns -3
-	minStack.pop()
-	fmt.Println("Top:", minStack.top())    // Returns 0
-	fmt.Println("Min:", minStack.getMin()) // Returns -2
+	minStack.Push(-2)
+	minStack.Push(0)
+	minStack.Push(-3)
+	fmt.Println("Min:", minStack.GetMin()) // Returns -3
+	minStack.Pop()
+	fmt.Println("Top:", minStack.Top())    // Returns 0
+	fmt.Println("Min:", minStack.GetMin()) // Returns -2
 
 }
