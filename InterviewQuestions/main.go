@@ -74,7 +74,7 @@ func main() {
 
 	fmt.Println("------------------------------------------------------------------")
 	// 12 Happy Number
-	fmt.Println("Is Happy number : ", isHappyNumber(10))
+	fmt.Println("Is Happy number : ", isHappyNumber(100))
 
 	fmt.Println("------------------------------------------------------------------")
 	// 13 Isomorphic Strings
@@ -146,5 +146,8 @@ func main() {
 	minStack.Pop()
 	fmt.Println("Top:", minStack.Top())    // Returns 0
 	fmt.Println("Min:", minStack.GetMin()) // Returns -2
+
+	// 23 GCD
+	fmt.Println(greatestCommonDivisor(357, 234))
 
 }
