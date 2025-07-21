@@ -32,7 +32,14 @@ func main() {
 	// Now you can access like JSON
 	fmt.Println("Name from JSON object: ", mapObj["Name"])
 
-	var p2 Person
-	json.Unmarshal(barr, &p2)
+	// var p2 Person
+	p2 := Person{
+		Name:    "abc",
+		Address: "cde",
+		Phone:   "1234567",
+	}
+	ba, _ := json.Marshal(p2)
+	json.Unmarshal(ba, &mapObj)
 	fmt.Println("Name of p2 - ", p2.Name)
+	fmt.Println(mapObj)
 }
