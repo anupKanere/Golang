@@ -7,6 +7,7 @@ import (
 
 func reverseWords(input string) string {
 	words := strings.Fields(input)
+	// words := strings.Split(input, " ") // this is also valid
 	fmt.Println("words - ", words)
 	fmt.Println("Length of words = ", len(words))
 
