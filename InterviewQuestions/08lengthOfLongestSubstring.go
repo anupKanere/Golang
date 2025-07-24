@@ -7,7 +7,7 @@ func lengthOfLongestSubstring(s string) int {
 
 	for right := 0; right < len(s); right++ {
 		if idx, found := charMap[s[right]]; found && idx >= left {
-			left = left + 1
+			left = idx + 1
 		}
 
 		charMap[s[right]] = right
@@ -24,7 +24,7 @@ func LongestSubstring(s string) string {
 
 	for right := 0; right < len(s); right++ {
 		if idx, found := charMap[s[right]]; found && idx >= left {
-			left = left + 1
+			left = right + 1
 		}
 
 		charMap[s[right]] = right
