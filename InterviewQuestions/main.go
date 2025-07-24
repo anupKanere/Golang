@@ -54,7 +54,7 @@ func main() {
 
 	fmt.Println("------------------------------------------------------------------")
 	// 08 Longest Substring Without Repeating Characters
-	str := "abcabcdefabcde"
+	str := "pwwkew"
 	fmt.Println("Length of longest Substring : ", lengthOfLongestSubstring(str))
 	fmt.Println("Longest Substring : ", LongestSubstring(str))
 
@@ -147,7 +147,20 @@ func main() {
 	fmt.Println("Top:", minStack.Top())    // Returns 0
 	fmt.Println("Min:", minStack.GetMin()) // Returns -2
 
+	fmt.Println("------------------------------------------------------------------")
 	// 23 GCD
 	fmt.Println(greatestCommonDivisor(357, 234))
+
+	fmt.Println("------------------------------------------------------------------")
+	// 24 Add two Number from Linked List
+	list1 := []int{1, 3, 5, 7, 9}
+	list2 := []int{2, 4, 6, 8, 10}
+	h1 := createNewLinkedList(list1)
+	h2 := createNewLinkedList(list2)
+	printList(h1)
+	printList(h2)
+	addRes := addTwoNumbers(h1, h2)
+	printList(addRes)
+	fmt.Println("------------------------------------------------------------------")
 
 }
