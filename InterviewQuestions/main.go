@@ -169,4 +169,10 @@ func main() {
 
 	fmt.Println("Tree Node Symmetric : ", isSymmetric(root))
 
+	// MinAbsoulteDifference : Leetcode 1200
+	arr1200 := []int{40, 11, 26, 27, -20}
+	res1200 := minAbsoluteDifference(arr1200)
+	fmt.Println("Leetcode Question no 1200: Min Absolute Difference")
+	fmt.Println(res1200)
+
 }
