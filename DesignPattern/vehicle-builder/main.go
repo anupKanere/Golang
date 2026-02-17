@@ -1,4 +1,4 @@
-package man
+package main
 
 import (
 	"fmt"
@@ -13,11 +13,11 @@ func main() {
 	carBuilder := &builder.CarBuilder{}
 	d.SetBuilder(carBuilder)
 	car := d.Build()
-	fmt.Println(car)
+	fmt.Printf("Car: %+v\n", car)
 
 	bikeBuilder := &builder.BikeBuilder{}
 	d.SetBuilder(bikeBuilder)
 	bike := d.Build()
-	fmt.Println(bike)
+	fmt.Printf("Bike: %+v\n", bike)
 
 }
