@@ -1,6 +1,6 @@
 package builder
 
-import "github.com/anupKanere/Golang/DesignPattern/vehicle-builder/model"
+import "github.com/anupKanere/Golang/design-patterns/vehicle-builder/model"
 
 type BikeBuilder struct {
 	Vehicle model.Vehicle

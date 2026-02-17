@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/anupKanere/Golang/DesignPattern/vehicle-builder/builder"
-	"github.com/anupKanere/Golang/DesignPattern/vehicle-builder/director"
+	"github.com/anupKanere/Golang/design-patterns/vehicle-builder/builder"
+	"github.com/anupKanere/Golang/design-patterns/vehicle-builder/director"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package director
 
 import (
-	"github.com/anupKanere/Golang/DesignPattern/vehicle-builder/builder"
-	"github.com/anupKanere/Golang/DesignPattern/vehicle-builder/model"
+	"github.com/anupKanere/Golang/design-patterns/vehicle-builder/builder"
+	"github.com/anupKanere/Golang/design-patterns/vehicle-builder/model"
 )
 
 type Director struct {
