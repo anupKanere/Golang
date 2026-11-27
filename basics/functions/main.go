@@ -5,7 +5,8 @@ import "fmt"
 // main function
 func main() {
 
-	defer fmt.Println("Calling defer function")
+	defer fmt.Println("Calling defer function - 1")
+	defer fmt.Println("Calling defer function - 2")
 
 	// defer greet()
 	greet()
@@ -37,4 +38,15 @@ func main() {
 	// Closure
 	double := Multiplier(5)
 	fmt.Println("Closure example ", double(2))
+
+	counter1 := Counter(5)
+
+	fmt.Println(counter1(2))
+	fmt.Println(counter1(2))
+	fmt.Println(counter1(2))
+	fmt.Println(counter1(2))
+	fmt.Println(counter1(1))
+	fmt.Println(counter1(1))
+	fmt.Println(counter1(1))
+
 }

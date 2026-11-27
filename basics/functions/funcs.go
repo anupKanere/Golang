@@ -43,7 +43,7 @@ func Multiplier(factor int) func(int) int {
 
 func Counter(num int) func(int) int {
 	return func(i int) int {
-		num += 1
+		num += i
 		return num
 	}
 
