@@ -19,10 +19,10 @@ func main() {
 
 	fmt.Println("Third Way : ")
 
-	// Infinite loop
+	// // Infinite loop
 	// j := 0
 	// for {
-	// 	fmt.Println("Printing Infinite Loop j : " , j)
+	// 	fmt.Println("Printing Infinite Loop j : ", j)
 	// 	j++
 	// }
 
